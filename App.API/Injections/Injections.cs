@@ -16,7 +16,7 @@ namespace App.API.Injections
         #region Providers
         public static void InjectProviders(WebApplicationBuilder builder)
         {
-            ProcessProviderInjection<LogBusinessRules>(builder);
+            ProcessProviderInjection<LogProvider>(builder);
         }
 
         private static void ProcessProviderInjection<T>(WebApplicationBuilder builder) where T : class
@@ -27,6 +27,11 @@ namespace App.API.Injections
                 return Activator.CreateInstance(typeof(T), dbContext) as T;
             });
         }
+
+
+
+
+
         #endregion
 
 
