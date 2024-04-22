@@ -1,3 +1,4 @@
+/* Estilos padrão para o menu */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -99,3 +100,26 @@
   }
 
 
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+    .nav ul {
+      margin-bottom: 10px; 
+    }
+
+      .nav ul li {
+        display: block;
+      }
+
+        .nav ul li ul {
+          position: static; 
+          display: none; 
+          margin-left: 25px; 
+        }
+
+        .nav ul li:hover ul {
+          display: block; 
+        }
+}
