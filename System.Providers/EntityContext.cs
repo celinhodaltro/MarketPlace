@@ -15,6 +15,7 @@ namespace System.Providers
              : base(options) { }
 
         public DbSet<Log> Log { get; set; }
+        public DbSet<User> User { get; set; }
 
 
 

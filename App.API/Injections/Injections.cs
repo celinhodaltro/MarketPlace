@@ -16,7 +16,7 @@ namespace App.API.Injections
         #region Providers
         public static void InjectProviders(WebApplicationBuilder builder)
         {
-            ProcessProviderInjection<LogProvider>(builder);
+            ProcessProviderInjection<UserProvider>(builder);
         }
 
         private static void ProcessProviderInjection<T>(WebApplicationBuilder builder) where T : class
